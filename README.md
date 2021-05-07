@@ -23,12 +23,13 @@ Each grade adds to the last.  It is recommended to run through grade 1 at least 
 
 ### Grade 1: basic game
 Start from the UE4 C++ "Third Person" demo.  Change the game incrementally, so that:
-1. When a player presses the spacebar, a projectile is created.
+1. When a player clicks, a projectile is created.
 2. The projectile moves forward at a constant rate.
 3. There is a target, which is destroyed when it touches a projectile.
-4. A particle effect plays when the target is destroyed.
-5. A sound effect plays when the target is destroyed.
-6. It takes three hits to destroy the target.
+4. Hitting the target also destroys the projectile.
+5. A particle effect plays when the target is destroyed.
+6. A sound effect plays when the target is destroyed.
+7. It takes three hits to destroy the target.
 
 ### Grade 2: multiplayer
 For each step in grade 1, make it work with multiple players.
@@ -48,4 +49,4 @@ For example, for step 3 of Grade 1, the test might create a target, create a pro
 
 This may not be possible for the multiplayer parts, due to the nature of UE4 functional tests.
 
-Also note that this is not a great first introduction to test-driven development, because many elements of the game can be quite challenging to effectively test.  This makes it a quite good advanced exercise for those already practiced in TDD.  If this is your first exposure to TDD, consider writing tests only for the following steps from Grade 1: 2, 3, 6.
+Also note that this is not a great first introduction to test-driven development, because many elements of the game can be quite challenging to effectively test.  This makes it a quite good advanced exercise for those already practiced in TDD.  If this is your first exposure to TDD, consider writing tests only for the following steps from Grade 1: 2, 3, 4, 7.
